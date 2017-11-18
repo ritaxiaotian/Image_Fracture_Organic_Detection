@@ -12,4 +12,5 @@ Steps for fracture and OM detection
 4. Testing fracture and organic matter object detector
 
 references : https://www.youtube.com/watch?v=COlbP62-B-U&list=PLQVvvaa0QuDcNK5GeCQnxYnSSaar2tpku
+
 references : https://github.com/tensorflow/models/tree/master/research/object_detection
