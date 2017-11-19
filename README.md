@@ -5,9 +5,11 @@ Steps for fracture and OM detection
 
 1. Create xml files for SEM images using Lableimg : https://github.com/ritaxiaotian/labelImg
 
-2. Creating TFRecords
+2. Creating TFRecords: xml_to_csv.py
 
-3. Training fracture and organic matter object detector: set up configure files
+3. Training fracture and organic matter object detector: set up configure files & pick up a model
+* 3a configuring the object detection training pipeline: configure your own model, Github
+* 3b use ssd_mobilenet model (existing models
 
 4. Testing fracture and organic matter object detector
 
