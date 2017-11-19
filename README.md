@@ -9,7 +9,7 @@ Steps for fracture and OM detection
 
 3. Training fracture and organic matter object detector: set up configure files & pick up a model
 * 3a configuring the object detection training pipeline: configure your own model, Github
-* 3b use ssd_mobilenet model (existing models
+* 3b use ssd_mobilenet model (https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
 
 4. Testing fracture and organic matter object detector
 
