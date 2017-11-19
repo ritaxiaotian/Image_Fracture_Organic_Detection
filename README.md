@@ -7,7 +7,7 @@ Steps for fracture and OM detection
 
 2. Creating TFRecords
 
-3. Training fracture and organic matter object detector
+3. Training fracture and organic matter object detector: set up configure files
 
 4. Testing fracture and organic matter object detector
 
