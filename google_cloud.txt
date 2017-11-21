@@ -1,0 +1,3 @@
+1. install ./install.sh
+2. ./bin/gcloud init
+3../gcloud compute scp ~/Dropbox/multi_obj/demo/object-detection/conf instance-1:~/rita_xiaotian --zone us-east1-b
