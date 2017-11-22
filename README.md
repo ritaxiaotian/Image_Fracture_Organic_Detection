@@ -24,6 +24,6 @@ references : https://www.youtube.com/watch?v=COlbP62-B-U&list=PLQVvvaa0QuDcNK5Ge
 
 references : https://github.com/tensorflow/models/tree/master/research/object_detection
 
-**Google Cloud: cd ..
-cd xiaoran
+**Google Cloud: cd ..   
+cd xiaoran    
 sudo jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root**
