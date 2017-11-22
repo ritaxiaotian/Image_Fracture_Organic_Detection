@@ -26,4 +26,4 @@ references : https://github.com/tensorflow/models/tree/master/research/object_de
 
 **Google Cloud: cd ..
 cd xiaoran
-jupy
+sudo jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root**
