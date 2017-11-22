@@ -3,4 +3,4 @@
 3../gcloud compute scp ~/Dropbox/multi_obj/demo/object-detection/conf instance-1:~/rita_xiaotian --zone us-east1-b
 
 
-sudo jupyter notebook --ip 0.0.0.0 --port 8888
+sudo jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root
