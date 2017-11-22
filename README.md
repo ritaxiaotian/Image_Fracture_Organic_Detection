@@ -14,20 +14,22 @@ Steps for fracture and OM detection
 * 3b use ssd_mobilenet model (https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
 
 
-**file configure**
+**file configure** 
 -----------------------------------------------------------------------------------------------------------------------
-Object-Detection
--data/
---test_labels.csv
---train_labels.csv
--images/
---test/
----testingimages.jpg
---train/
----testingimages.jpg
---...yourimages.jpg
--training
--xml_to_csv.py
+
+Object-Detection    
+-data/    
+--test_labels.csv   
+--train_labels.csv    
+-images/    
+--test/   
+---testingimages.jpg    
+--train/    
+---testingimages.jpg    
+--...yourimages.jpg   
+-training   
+-xml_to_csv.py    
+
 --------------------------------------------------------------------------------------------------------------------------
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim    
 python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
