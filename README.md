@@ -6,8 +6,14 @@ Steps for fracture and OM detection
 1. Create xml files for SEM images using Lableimg : https://github.com/ritaxiaotian/labelImg
 
 2. Creating TFRecords:    
-* xml_to_csv.py: generate train.csv, test.csv    
-* generate_tfrecord.py: generate tfrecord    
+* xml_to_csv.py: generate train.csv, test.csv
+  * python3 xml_to_csv.py
+* generate_tfrecord.py: generate tfrecord   
+  * From tensorflow/models/   
+  * Create train data:    
+  * python3 generate_tfrecord.py --csv_input=data/train_labels.csv --output_path=data/train.record    
+  * Create test data:   
+  * python3 generate_tfrecord.py --csv_input=data/test_labels.csv  --output_path=data/test.record   
 
 3. Training fracture and organic matter object detector: set up configure files & pick up a model
 * 3a configuring the object detection training pipeline: configure your own model, Github
