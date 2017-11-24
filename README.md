@@ -37,13 +37,13 @@ Object-Detection
 -xml_to_csv.py    
 
 --------------------------------------------------------------------------------------------------------------------------
-# under models/research #
+* under models/research 
 protoc object_detection/protos/*.proto --python_out=.
 
-# under models/research #
+* under models/research 
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim    
 
-# under models/research #
+* under models/research 
 python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
 
 python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
