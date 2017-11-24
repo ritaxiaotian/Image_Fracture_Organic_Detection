@@ -41,6 +41,7 @@ Object-Detection
 protoc object_detection/protos/*.proto --python_out=.
  
 * under models/research   
+*under models/research/object_detection  
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim    
 
 * under models/research   
