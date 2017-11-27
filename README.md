@@ -48,8 +48,12 @@ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
 
 python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
+
 **look at tensor flow training log**
-at terminal: $tensorboard --logdir=training/
+
+at terminal: models/object_detection
+
+tensorboard --logdir=training/
 
 4. Testing fracture and organic matter object detector
 
