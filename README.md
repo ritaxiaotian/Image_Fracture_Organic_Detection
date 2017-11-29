@@ -65,11 +65,6 @@ python3 export_inference_graph.py \
     --trained_checkpoint_prefix training/model.ckpt-43215 \
     --output_directory frac_inference_graph
 
-
-references : https://www.youtube.com/watch?v=COlbP62-B-U&list=PLQVvvaa0QuDcNK5GeCQnxYnSSaar2tpku
-
-references : https://github.com/tensorflow/models/tree/master/research/object_detection
-
 **Google Cloud: cd ..   
 cd xiaoran    
 sudo jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root**
