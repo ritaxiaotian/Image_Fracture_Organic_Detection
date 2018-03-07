@@ -8,6 +8,16 @@ Steps for fracture and OM detection
 2. Creating TFRecords:    
 * xml_to_csv.py: generate train.csv, test.csv
   * python3 xml_to_csv.py
+  
+  modify code:
+  
+  def main():
+    for directory in ['train','test']:
+        image_path = os.path.join(os.getcwd(), 'images/{}'.format(directory))
+        xml_df = xml_to_csv(image_path)
+        xml_df.to_csv('data/{}_labels.csv'.format(directory), index=None)
+        print('Successfully converted xml to csv.')
+
 * generate_tfrecord.py: generate tfrecord   
   * From tensorflow/models/   
   * Create train data:    
