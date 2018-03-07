@@ -8,3 +8,5 @@ Google cloud setup:https://www.youtube.com/watch?v=IEa8hIvkto0
 
 
 sudo jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root
+
+External IP:8888/?token=bac4f7e02260d44f216cbb23069f7bda54b4bf1ea3ebe078
