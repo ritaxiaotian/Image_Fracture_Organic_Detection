@@ -72,9 +72,9 @@ tensorboard --logdir=training/
 python3 export_inference_graph.py \
     --input_type image_tensor \
     --pipeline_config_path training/ssd_mobilenet_v1_pets.config \
-    --trained_checkpoint_prefix training/model.ckpt-43215 \
-    --output_directory frac_inference_graph
-
+    --trained_checkpoint_prefix training/model.ckpt-1739 \
+    --output_directory mac_n_cheese_inference_graph
+    
 **Google Cloud: cd ..   
 cd xiaoran    
 sudo jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root**
