@@ -59,6 +59,8 @@ python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=trai
 
 python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
 
+**python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_coco.config**
+
 **look at tensor flow training log**
 
 at terminal: models/object_detection
