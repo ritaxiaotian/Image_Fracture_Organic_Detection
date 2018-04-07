@@ -74,9 +74,30 @@ tensorboard --logdir=training/
 python3 export_inference_graph.py \
     --input_type image_tensor \
     --pipeline_config_path training/ssd_mobilenet_v1_pets.config \
-    --trained_checkpoint_prefix training/model.ckpt-1739 \
-    --output_directory mac_n_cheese_inference_graph
+    --trained_checkpoint_prefix training/model.ckpt-48536 \
+    --output_directory ssd_mobilenet_v1_200_inference_graph
+    
+    
+5. Test
+
+# What model to download.
+MODEL_NAME = 'mac_n_cheese_inference_graph'
+
+# Path to frozen detection graph. This is the actual model that is used for the object detection.
+PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
+
+# List of the strings that is used to add correct label for each box.
+PATH_TO_LABELS = os.path.join('training', 'object-detection.pbtxt')
+
+NUM_CLASSES = 1
+Next, we can just delete the entire Download Model section, since we don't need to download anymore.
+
+Finally, in the Detection section, change the TEST_IMAGE_PATHS var to:
+
+TEST_IMAGE_PATHS = [ os.path.join(PATH_TO_TEST_IMAGES_DIR, 'image{}.jpg'.format(i))
     
 **Google Cloud: cd ..   
 cd xiaoran    
 sudo jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root**
+
+
