@@ -74,14 +74,14 @@ tensorboard --logdir=training/
 python3 export_inference_graph.py \
     --input_type image_tensor \
     --pipeline_config_path training/ssd_mobilenet_v1_pets.config \
-    --trained_checkpoint_prefix training/model.ckpt-48536 \
+    --trained_checkpoint_prefix training/model.ckpt-36995 \
     --output_directory ssd_mobilenet_v1_200_inference_graph
     
     
 5. Test
 
 # What model to download.
-MODEL_NAME = 'mac_n_cheese_inference_graph'
+MODEL_NAME = 'ssd_mobilenet_v1_200_inference_graph'
 
 # Path to frozen detection graph. This is the actual model that is used for the object detection.
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
