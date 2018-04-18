@@ -81,7 +81,9 @@ python3 eval.py --logtostderr --pipeline_config_path=training/ssd_mobilenet_v1_p
 
 at terminal: models/object_detection
 
-tensorboard --logdir=training/
+tensorboard --logdir=training
+
+tensorboard --logdir=eval
 
 4. Testing fracture and organic matter object detector
 
