@@ -73,7 +73,7 @@ PATH_TO_YOUR_PIPELINE_CONFIG = training/ssd_mobilenet_v1_pets.config
 python3 eval.py --logtostderr --pipeline_config_path=${PATH_TO_YOUR_PIPELINE_CONFIG} --checkpoint_dir=${PATH_TO_TRAIN_DIR} \
     --eval_dir=${PATH_TO_EVAL_DIR}
     
-python3 eval.py --logtostderr --training/ssd_mobilenet_v1_pets.config --checkpoint_dir=training/ --eval_dir=Eval/
+python3 eval.py --logtostderr --pipeline_config_path=training/ssd_mobilenet_v1_pets.config --checkpoint_dir=training/ --eval_dir=eval/
     
 **python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_coco.config**
 
